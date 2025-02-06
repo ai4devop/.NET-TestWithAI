@@ -29,8 +29,8 @@ namespace Exercice1
             {
                 return false;
             }
-            char[] a1 = str1.ToArray();
-            char[] a2 = str2.ToArray();
+            char[] a1 = str1.ToLower().ToArray();
+            char[] a2 = str2.ToLower().ToArray();
             Array.Sort(a1);
             Array.Sort(a2);
             return a1.SequenceEqual(a2);
