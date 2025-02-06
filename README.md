@@ -10,7 +10,7 @@ Ce dépôt s'adresse aux développeurs de tous niveaux qui souhaitent intégrer 
 
 ## 🛠️ Comment Utiliser ce Dépôt
 
-Les différents exercices de cet atelier se trouvent tous dans le répertoire `exercices` et disposent chacun d'un `README`. Chaque exercice est contenu dans un répertoire numéroté de façon croissante (01, 02, 0n...), suivi du mot `exercice`. Par exemple, le premier exercice se trouve dans le répertoire `./exercices/Exercice1`. Les solutions des exercices sont disponibles dans le répertoire `solution`.
+Les différents exercices de cet atelier se trouvent tous dans le répertoire `exercices` et disposent chacun d'un `README`. Chaque exercice est contenu dans un répertoire numéroté de façon croissante (01, 02, 0n...), suivi du mot `exercice`. Par exemple, le premier exercice se trouve dans le répertoire `./exercices/Exercice1`.
 
 
 Pour cloner ce projet, utilisez la commande suivante :
