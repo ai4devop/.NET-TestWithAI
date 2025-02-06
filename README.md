@@ -1,66 +1,43 @@
-# 🧪 Generating Unit Tests with Generative AI
+# 📝 Exercise 3 - Unit Testing + Mocking ~ 20 minutes
 
-## 👀 Overview
+## 🎯 Objectives
+In this exercise, you will work with a small customer account management application, _crm_. This application is a simplified proof of concept with limited functionality.
 
-This repository is designed to help developers practice and improve their skills in implementing unit tests and test-driven development (TDD) using generative AI. Through practical exercises, organized in folders, developers will learn how AI can facilitate the creation, refinement, and optimization of unit tests for their daily projects.
+In the `UserService` class, two methods are already implemented: user search and user creation. The goal of this exercise is to explore unit testing using JUnit and Mockito to simulate unmanaged parts of the application.
 
-## 👤 Audience
+🔍 **Note**: This application uses neither a framework nor a database, so you will need to _"mock"_ the unmanaged components in your tests.
 
-This repository is for developers of all levels who want to integrate generative AI tools into their workflow, with a particular focus on unit testing and TDD practices.
+## 🛠️ Instructions
 
-## 🛠️ How to Use This Repository
+### 1. Implement Unit Tests in `UserServiceTest`
 
-The various exercises in this workshop are all located in the `exercises` folder, each with its own `README`. Each exercise is in a sequentially numbered folder (01, 02, 0n...), followed by the word `exercise`. For example, the first exercise is in the `./exercices/Exercice1` folder.
+- In `UserServiceTest`, a setup is already present to write unit tests for various functions in `UserService`.
+- You will find test skeletons with a description of what is expected.
+- Use these guidelines and Continue to write the necessary unit tests.
+- Remember to mock calls to `UserRepository`.
+- Run the tests and ensure they pass successfully.
 
-To clone this project, use the following command:
+### 2. Add the `DeleteUser` Feature in `UserService`
 
-```bash
-git clone <ADD FINAL REPO URL HERE>
-```
+- We want to add a `void DeleteUser(long id)` method that follows these rules:
+  - If no user is associated with this ID, no action should be taken.
+  - If the user exists and has the Admin role, the operation should fail, throwing a `NotAllowedException` with the message _"You cannot delete an admin user"_.
+  - The `DeleteUser(id)` method in `UserRepository` as well as the exception already exist.
+  - Once this method is implemented, write unit tests in `UserServiceTest` to cover these cases.
 
-Then, navigate to the desired exercise folder:
-
-```bash
-cd ./exercices/Exercice1
-```
-
-
-Next, install the necessary dependencies:
-
-```bash
-dotnet restore
-```
-
-Run the tests with:
+### 🚀 How to Run the Tests
+Run dotnet in the terminal to execute the tests:
 
 ```bash
-dotnet test
+dotnet test Exercice3.Tests/
 ```
 
-## 🧩 Exercise Structure
-To work on an exercise, switch to the corresponding folder and follow the instructions in the README or comments in the code. Based on your knowledge and what you want to deepen, feel free to move between exercises that you find relevant.
+## ✅ Validation Criteria:
+- The written unit tests pass successfully.
+- Tests cover the various rules, including the check for phone number uniqueness.
 
-### 1. 🔤 StringHelper | 01_exercice | ~15 minutes
-Implement unit tests for three predefined methods using generative AI suggestions. The tests should be written in the `StringHelperTest` class. Verify their validity with:
+### 💡 Conseils pour Moq :
 
-```bash
-dotnet test
-```
-### 2. ⏳ FormatDateTimeHelper | 02_exercice | ~20 minutes
-Implement the formatDate and formatDateTime functions by following the tests in the `DateTimeHelperTest` file. This exercise emphasizes the application of TDD with AI. Enhance the tests as needed to reinforce validations.
-
-
-### 3. 👥 CRM Application | 03_exercice | ~20 minutes
-In this exercise, you will work on a customer account management application with a `UserRepository` for retrieving users and a service providing find and create functions. Write unit tests covering these functions and their edge cases by mocking `UserRepository` calls.
-
-
-## 📈 Goals and Purpose of the Exercises
-**📝 Exercise 1, Unit Testing**: This exercise introduces you to using AI to generate effective unit tests. By automating test creation, developers can focus on code quality and explore edge cases. AI handles test creation tasks, enabling a more robust testing process and enhancing productivity.
-
-**🧩 Exercise 2, TDD**: This exercise explores TDD practice with generative AI, demonstrating how AI can iterate from tests to produce functional code and ensure its compliance with various scenarios defined in the unit tests.
-
-**🤖 Exercise 3, Unit Tests with Mocking**: This exercise highlights the use of mocks to simulate repository calls. It covers potential application states, such as successful data retrieval and error handling. This exercise helps developers use AI to identify and cover all potential cases, making software more resilient and reliable.
-
-## 🎯 Conclusion
-By completing these exercises, you will not only improve your unit testing skills but also discover how AI can become a powerful ally in software development. Each exercise has a answer directory that you can refer to if you need help or have exceeded the allotted time.
+You can use the [documentation](https://github.com/devlooped/moq/wiki/Quickstart) to understand how to use Mq.
+You can also use the AI to help you...
 
