@@ -1,30 +1,27 @@
-📝 Exercice 1- Tests Unitaires ~ 15 minutes
+# 📝 Exercise 1 - Unit Tests ~ 15 minutes
 
-🎯 Objectif
-Dans la classe StringHelper, nous avons trois fonctions utilitaires à tester :
+## 🎯 Objective
+In the `StringHelper` class, we have three utility functions to test:
 
+- **🔍 IsPalindrome**: This function takes a string as input and determines if it is a palindrome. A palindrome is a word, phrase, or expression that reads the same forwards and backwards, such as _"radar"_.
+- **🔄 IsAnagram**: This function takes two strings as input and checks if they contain the same characters, for example: _"elbow"_ and _"below"_.
+- **🐪 ToCamelCase**: This function converts a phrase into camelCase format. For example, _"I eat an apple"_ becomes _"IEatAnApple"_.
 
-🔍 isPalindrome : Cette fonction prend une chaîne de caractères en entrée et détermine si elle est un palindrome. Pour rappel, un palindrome est un mot, une phrase ou une expression qui se lit de la même manière de gauche à droite ou inversement, par exemple : "radar".
+Your goal is to write unit tests for each method using Continue to cover various scenarios, both valid and invalid.
 
-🔄 isAnagram : Cette fonction prend en entrée deux chaînes de caractères et vérifie si elles contiennent les mêmes caractères, par exemple : "niche" et "chien".
+## 🛠️ Instructions
 
-🐪 toCamelCase : Cette fonction transforme une phrase en une chaîne de caractères au format camelCase. Par exemple, "Je mange une pomme" devient "JeMangeUnePomme".
+1. Implement the unit tests in the `StringHelperTest` class for the three mentioned methods.
+2. Ensure you test multiple cases for each method, covering all possible situations. An example is provided to help you get started.
+3. Verify that all unit tests in `StringHelperTest` pass successfully.
 
-Votre objectif est d'écrire des tests unitaires pour chaque méthode à l'aide de l'outil Continue, afin de couvrir divers cas de figure, qu'ils soient valides ou non.
+### 🚀 How to Run the Tests
+Run dotnet in the terminal to execute the tests:
 
-🛠️ Instructions
-
-Implémentez les tests unitaires dans la classe StringHelperTest pour les trois méthodes mentionnées.
-Assurez-vous de tester plusieurs cas pour chaque méthode, en couvrant les situations possibles. Un exemple est déjà fourni pour vous aider à démarrer.
-Vérifiez que tous les tests unitaires dans StringHelperTest passent avec succès.
-
-
-🚀 Comment exécuter les tests
-Lancez dotnet dans le terminal pour exécuter les tests :
-
+```bash
 dotnet test Exercice1.Tests/
+```
 
-✅ Critères de validation
-
-Tous les tests unitaires écrits réussissent.
-Les cas de bord (par exemple, une chaîne null, une chaîne vide, etc.) sont bien couverts.
+## ✅ Validation Criteria
+- All written unit tests pass successfully.
+- Edge cases (e.g., a null string, an empty string, etc.) are well covered.

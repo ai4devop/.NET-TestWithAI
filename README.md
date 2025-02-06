@@ -1,64 +1,66 @@
-# 🧪 Produire des Tests Unitaires avec l'IA Générative
+# 🧪 Generating Unit Tests with Generative AI
 
-## 👀 Vue d'ensemble
+## 👀 Overview
 
-Ce dépôt est conçu pour aider les développeurs à s’entraîner et à améliorer leurs compétences dans la mise en œuvre de tests unitaires et du développement piloté par les tests (TDD) en utilisant l'IA générative. À travers des exercices pratiques, découpés sous forme de répertoires, les développeurs découvriront comment l'IA peut faciliter la création, l'affinage et l'optimisation des tests unitaires dans leurs projets quotidiens.
+This repository is designed to help developers practice and improve their skills in implementing unit tests and test-driven development (TDD) using generative AI. Through practical exercises, organized in folders, developers will learn how AI can facilitate the creation, refinement, and optimization of unit tests for their daily projects.
 
 ## 👤 Audience
 
-Ce dépôt s'adresse aux développeurs de tous niveaux qui souhaitent intégrer des outils d'IA générative dans leur flux de travail, avec un accent particulier sur les pratiques de tests unitaires et de TDD.
+This repository is for developers of all levels who want to integrate generative AI tools into their workflow, with a particular focus on unit testing and TDD practices.
 
-## 🛠️ Comment Utiliser ce Dépôt
+## 🛠️ How to Use This Repository
 
-Les différents exercices de cet atelier se trouvent tous dans le répertoire `exercices` et disposent chacun d'un `README`. Chaque exercice est contenu dans un répertoire numéroté de façon croissante (01, 02, 0n...), suivi du mot `exercice`. Par exemple, le premier exercice se trouve dans le répertoire `./exercices/Exercice1`. Les solutions des exercices sont disponibles dans le répertoire `solution`.
+The various exercises in this workshop are all located in the `exercises` folder, each with its own `README`. Each exercise is in a sequentially numbered folder (01, 02, 0n...), followed by the word `exercise`. For example, the first exercise is in the `./exercices/Exercice1` folder.
 
-
-Pour cloner ce projet, utilisez la commande suivante :
+To clone this project, use the following command:
 
 ```bash
-git clone <A AJOUTER L'URL DU REPO FINAL>
+git clone <ADD FINAL REPO URL HERE>
 ```
-Naviguez ensuite vers le répertoire de l'exercice voulu :
+
+Then, navigate to the desired exercise folder:
 
 ```bash
 cd ./exercices/Exercice1
 ```
 
 
-Ensuite, installez les dépendances nécessaires :
+Next, install the necessary dependencies:
+
 ```bash
 dotnet restore
 ```
 
-Lancez les tests avec :
+Run the tests with:
 
 ```bash
 dotnet test
 ```
 
-## 🧩 Structure des Exercices
-Pour travailler sur un exercice, basculez sur le répertoire correspondant et suivez les instructions du README ou les commentaires dans le code. En fonction de vos connaissances et ce que vous souhaitez approfondir, vous êtes libres de basculer sur les exercices que vous jugez pertinents.
+## 🧩 Exercise Structure
+To work on an exercise, switch to the corresponding folder and follow the instructions in the README or comments in the code. Based on your knowledge and what you want to deepen, feel free to move between exercises that you find relevant.
 
-
-### 1. 🔤 StringHelper | Exercice1 | ~15 minutes
-Implémentez des tests unitaires pour trois méthodes déjà écrites en utilisant des suggestions d'IA générative. Les tests doivent être écrits dans la classe `StringHelperTest`. Vérifiez leur validité avec :
+### 1. 🔤 StringHelper | 01_exercice | ~15 minutes
+Implement unit tests for three predefined methods using generative AI suggestions. The tests should be written in the `StringHelperTest` class. Verify their validity with:
 
 ```bash
 dotnet test
 ```
-### 2. ⏳ FormatDateTimeHelper | Exercice2 | ~20 minutes
-Implémentez les fonctions formatDate et formatDateTime en suivant les tests du fichier DateTimeHelperTest. Cet exercice met en valeur l’application du TDD avec l'IA. Améliorez les tests au besoin pour renforcer les validations.
-
-### 3. 👥 Application CRM | Exercice3 | ~20 minutes
-Dans cet exercice, vous travaillerez sur une application de gestion de comptes clients avec un `UserRepository` pour la récupération des utilisateurs et un service fournissant des fonctions find et create. Écrivez des tests unitaires couvrant ces fonctions et leurs cas limites en simulant les appels à UserRepository.
+### 2. ⏳ FormatDateTimeHelper | 02_exercice | ~20 minutes
+Implement the formatDate and formatDateTime functions by following the tests in the `DateTimeHelperTest` file. This exercise emphasizes the application of TDD with AI. Enhance the tests as needed to reinforce validations.
 
 
-## 📈 Objectifs et Bénéfices des Exercices
-**📝 Exercice 1, Tests Unitaires** : Cet exercice vous familiarise avec l'utilisation de l'IA pour générer des tests unitaires efficaces. En automatisant la création de tests, les développeurs peuvent se concentrer sur la qualité du code et explorer les cas limites. L'IA prend en charge les tâches de création de tests, facilitant un processus de test plus robuste et améliorant la productivité.
+### 3. 👥 CRM Application | 03_exercice | ~20 minutes
+In this exercise, you will work on a customer account management application with a `UserRepository` for retrieving users and a service providing find and create functions. Write unit tests covering these functions and their edge cases by mocking `UserRepository` calls.
 
-**🧩 Exercice 2, TDD** : Cet exercice explore la pratique du TDD avec l'IA générative, en montrant comment l'IA peut itérer à partir de tests pour produire du code fonctionnel et s’assurer de la conformité de ce code à divers scénarios définis dans les tests unitaires.
 
-**🤖 Exercice 3, Tests Unitaires avec Mocking** : Cet exercice met en avant l'utilisation de mocks pour simuler des appels au repository. Il couvre les états possibles de l'application, comme la récupération réussie des données, la gestion des erreurs et les délais d'attente. Cet exercice aide les développeurs à utiliser l'IA pour identifier et couvrir tous les cas potentiels, rendant le logiciel plus résilient et fiable.
+## 📈 Goals and Purpose of the Exercises
+**📝 Exercise 1, Unit Testing**: This exercise introduces you to using AI to generate effective unit tests. By automating test creation, developers can focus on code quality and explore edge cases. AI handles test creation tasks, enabling a more robust testing process and enhancing productivity.
+
+**🧩 Exercise 2, TDD**: This exercise explores TDD practice with generative AI, demonstrating how AI can iterate from tests to produce functional code and ensure its compliance with various scenarios defined in the unit tests.
+
+**🤖 Exercise 3, Unit Tests with Mocking**: This exercise highlights the use of mocks to simulate repository calls. It covers potential application states, such as successful data retrieval and error handling. This exercise helps developers use AI to identify and cover all potential cases, making software more resilient and reliable.
 
 ## 🎯 Conclusion
-En réalisant ces exercices, vous améliorerez non seulement vos compétences en matière de tests unitaires, mais vous découvrirez également comment l'IA peut devenir un allié puissant dans le développement de logiciels. Chaque exercice dispose d'un répertoire solution que vous pouvez consulter si vous avez besoin d'aide ou avez dépassé le temps imparti.
+By completing these exercises, you will not only improve your unit testing skills but also discover how AI can become a powerful ally in software development. Each exercise has a answer directory that you can refer to if you need help or have exceeded the allotted time.
+
