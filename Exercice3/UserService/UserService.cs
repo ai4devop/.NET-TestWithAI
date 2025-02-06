@@ -19,10 +19,16 @@ public class UserService (IUserRepository _userRepository) {
   }
 
   public void DeleteUser(long id) {
-    // TODO
-    // If the user doesn't exists, this method does nothing
-    // If the user exists but doesn't have the admin role, it throws NotAllowedException
-    // Else it delete the user
-  }
+        User user = _userRepository.findById(id);
+        if (user == null)
+        {
+            return;
+        }
+        if (user.role == Role.ADMIN)
+        {
+            throw new NotAllowedException("You cannot delete an admin user");
+        }
+        _userRepository.deleteUser(id);
+    }
 
 }
