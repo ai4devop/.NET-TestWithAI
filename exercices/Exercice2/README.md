@@ -31,22 +31,6 @@ Pour la première partie de cet exercice, vous allez implémenter des fonctions 
   - Utilisez le test `TestFormatDateWithPattern` dans `DateTimeHelperTest`.
   - Cette méthode doit accepter un objet `DateTime` et un `string` représentant le format souhaité (par ex. `yyyy-MM-dd`) et retourner un `string` correspondant.
 
-### 2. Rédaction de tests unitaires puis des fonctions
-Dans cette seconde partie, vous allez créer des tests pour les méthodes de traitement de `DateTimeTime`, puis implémenter les fonctions pour les faire réussir.
-
-- **Pour la fonction `FormatDate(DateTimeTime dateTime)`** :
-  - Écrivez un premier test `TestFormatDateValidDate` qui vérifie que la fonction `FormatDate` retourne bien une chaîne de caractères au format yyyy-MM-ddThh:mm:ss pour une `DateTime` donnée, par exemple : _"2024-08-31T08:46:00"_.
-  - Implémentez ensuite la fonction `FormatDate(DateTimeTime dateTime)` pour que le test réussisse.
-
-- **Pour la fonction `ParseDateTime(string dateTimestring)`** :
-  - Écrivez un test `TestParseDateValidDate` qui vérifie qu’une chaîne de caractères au format `yyyy-MM-ddThh:mm:ss` est bien convertie en un objet `DateTimeTime`, par exemple : _"2024-08-31T08:46:00"_.
-  - Écrivez un test `TestParseDateInvalidDate` qui vérifie qu’une chaîne au mauvais format produit une exception `FormatException`, par exemple : _"invalid-date"_.
-  - Implémentez ensuite la fonction `ParseDateTime(string dateTimestring)` pour faire passer les tests.
-
-- **Pour la fonction `FormatDate(DateTimeTime dateTime, string pattern)`** :
-  - Écrivez un test `TestFormatDateWithPattern` qui vérifie qu’une `DateTimeTime` donnée et un modèle de format (par ex. `dd/MM/yyyy HH:mm:ss`) produisent une chaîne formatée, par exemple _"31/08/2024 08:46:00"_.
-  - Implémentez ensuite la fonction `FormatDate(DateTimeTime dateTime, string pattern)` pour faire passer le test.
-
 ### 🚀 Comment exécuter les tests
 Lancez Maven dans le terminal pour exécuter les tests :
 
@@ -56,5 +40,4 @@ dotnet test Exercice2.Tests/
 
 ## ✅ Critères de validation :
 - Les fonctions de traitement pour DateTime sont implémentées et les tests existants réussissent.
-- Les tests et fonctions pour le traitement de DateTimeTime sont implémentés et réussissent.
 

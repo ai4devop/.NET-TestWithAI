@@ -38,7 +38,7 @@ dotnet test Exercice3.Tests/
 - Les tests unitaires rédigés passent avec succès.
 - Les tests couvrent les différentes règles, y compris la vérification de l'unicité du numéro de téléphone.
 
-### 💡 Conseils pour Mockito :
+### 💡 Conseils pour Moq :
 
 Vous pouvez utiliser la [documentation](https://github.com/devlooped/moq/wiki/Quickstart) pour comprendre comment utiliser Moq.
 Vous pouvez aussi utiliser l'IA pour vous aider ...
