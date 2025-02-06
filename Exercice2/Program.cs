@@ -10,10 +10,9 @@
     ///  <param name="date">date Object</param>
     ///  <returns>date string using the format yyyy-MM-dd, ex : "2024-08-31"</returns>
     /// </summary>
-    public static string? FormatDate(DateTime? date)
+    public static string? FormatDate(DateTime date)
     {
-        // TODO
-        return null;
+        return date.ToString("yyyy-MM-dd");
     }
 
     /// <summary>
@@ -23,8 +22,11 @@
     /// </summary>
     public static DateTime? ParseDate(string? dateString)
     {
-        // TODO
-        return null;
+        if (string.IsNullOrWhiteSpace(dateString))
+        {
+            return null;
+        }
+        return DateTime.Parse(dateString);
     }
 
     /// <summary>
@@ -33,9 +35,8 @@
     ///  <param name="pattern"> pattern date format, ex : yyyy-MM-dd ou dd/MM/YYYY</param>
     ///  <returns>string of the datetime formatted using the pattern</returns>
     /// </summary>
-    public static string? FormatDate(DateTime? date, string? pattern)
+    public static string? FormatDate(DateTime date, string? pattern)
     {
-        // TODO
-        return null;
+        return date.ToString(pattern);
     }
 }

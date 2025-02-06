@@ -31,7 +31,6 @@
         string? formattedDate2 = DateTimeHelper.FormatDate(date, "yyyy-MM-dd");
         Assert.Equal("28/10/2024", formattedDate1);
         Assert.Equal("2024-10-28", formattedDate2);
-
     }
 }
 
